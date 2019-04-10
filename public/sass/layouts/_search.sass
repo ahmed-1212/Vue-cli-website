@@ -1,0 +1,54 @@
+.search
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 1)
+    z-index: -1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    opacity: 0
+    @include transition(all .5s ease-in-out)
+    .close
+        position: absolute
+        right: 20%
+        top: 10%
+        color: #ccc !important
+        font-size: 15px
+    form
+        display: flex
+        justify-content: center
+        .form-groupe
+            width: 700px
+            position: relative
+            .form-control
+                background: transparent
+                border-radius: 0px
+                outline: none
+                height: 50px
+                padding: 0px
+                border: none
+                outline: none
+                -webkit-box-shadow: none
+                box-shadow: none
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+                color: #fff
+                font-family: "Poppins", sans-serif
+                font-size: 24px
+                font-weight: normal
+            .search-btn
+                position: absolute
+                top: 10px
+                right: -5px
+                background-color: transparent
+                border: none
+                font-size: 20px
+                color: #fff
+                cursor: pointer
+
+
+
+        

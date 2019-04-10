@@ -1,0 +1,45 @@
+.slider
+    .carousel
+        .carousel-inner
+            img 
+                height: 100vh
+            .carousel-caption
+                display: flex !important
+                top: 35%
+                flex-direction: column
+                @media(max-width: 576px)
+                    top: 25%
+                @media(max-width: 767px)
+                    top: 30%
+                h2
+                    font-size: 48px
+                    color: $main-color
+                    @media(max-width: 540px)
+                    font-size: 38px
+                .h1
+                    font-size: 72px
+                    color: #fff
+                    font-family: 'Poppins', sans-serif
+                    font-weight: 700
+                    @media(max-width: 540px)
+                        font-size: 50px
+                    @media(max-width: 540px)
+                        font-size: 40px
+                p
+                    font-size: 22px   
+                    font-weight: 400
+                .get
+                    background-color: #ffffff
+                    color: $main-color
+                    margin: 20px auto
+                    @media(max-width: 767px)
+                        font-size: 15px
+                        width: 35%
+                    @media(max-width: 576px)
+                        font-size: 15px
+                        width: 50%
+                    @media(max-width: 375px)
+                        width: 55%
+                    &:hover
+                        background-color: #333
+                        color: $main-color !important

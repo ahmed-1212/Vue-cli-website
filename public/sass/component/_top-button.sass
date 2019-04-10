@@ -1,0 +1,19 @@
+.up
+    position: fixed
+    right: 20px
+    bottom: 20px
+    background-color: #333
+    height: 50px
+    width: 50px
+    border-radius: 50%
+    cursor: pointer
+    color: #fff
+    text-align: center
+    line-height: 50px
+    z-index: 9999
+    @include box-shadow(0px 23px 42px rgba(0, 0, 0, 0.2))
+    @include transition(all .5s ease-in-out)
+    display: none
+    &:hover
+        background-color: $main-color
+        transform: translateY(-10px)

@@ -1,0 +1,78 @@
+.topbar
+    background-color: transparentize
+    position: relative
+    top: 95px
+    margin-top: -97px
+    padding: 20px 0
+    z-index: 2
+    @media(max-width: 767px)
+        top: 120px
+        margin-top: -135px
+    @media(max-width: 451px)
+        top: 118px
+        margin-top: -128px
+        a
+            font-size: 12px
+    @media(max-width: 375px)
+        top: 137px
+        margin-top: -146px
+    a
+        @media(max-width: 767px)
+            display: block
+            &:not(:last-child)
+                margin: 0px 0 10px
+    hr
+        border-top: 1px solid rgba(255, 255, 255, 0.22)
+    .info
+        display: flex
+        justify-content: space-between
+        a 
+            color: #ffffff
+            text-decoration: none
+            font-size: 14px
+            @media(max-width: 451px)
+                font-size: 12px
+            &:not(:last-child)
+                margin-right: 25px
+            i 
+                margin-right: 10px
+                @media(max-width: 375px)
+                    margin-right: 3px
+        .date
+            position: relative
+            a
+                &:not(:last-child)
+                    margin-right: 25px
+                @media(max-width: 451px)
+                    font-size: 12px
+            .show
+                display: block
+            .hide
+                display: none
+            ul
+                position: absolute
+                top: 25px
+                right: -10px
+                z-index: 10
+                width: 60px
+                background-color: #fff
+                color: #000
+                text-align: center
+                border-radius: 5px
+                @include transition(all .5s ease-in-out)
+                @media(max-width: 767px)
+                    top: 55px
+                    right: auto
+                li
+                    color: #000
+                    padding: 5px 0
+                    a
+                        color: #000
+                    &:hover
+                        background-color: #cccccc
+                li:first-child
+                    &:hover
+                        border-radius: 5px 5px 0px 0
+                li:last-child
+                    &:hover
+                        border-radius: 0px 0px 5px 5px

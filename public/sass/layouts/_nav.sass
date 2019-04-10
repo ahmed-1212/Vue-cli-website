@@ -1,0 +1,97 @@
+.navbar
+    position: fixed
+    top: 170px
+    z-index: 1
+    margin-top: -110px
+    @media(max-width: 767px)
+        top: 195px
+    @media(max-width: 451px)
+        top: 190px
+    .navbar-toggler
+        outline: none
+        &:hover
+            span:first-child
+                width: 10px
+            span:last-child
+                width: 30px
+        span
+            width: 30px
+            background: #f9b522
+            height: 2px
+            border-radius: 99999px
+            display: block 
+            margin: 5px
+            @include transition(all .3s ease-in)
+        .seconde
+            width: 20px
+        span:last-child
+            width: 10px
+    .navbar-nav
+        li 
+            padding: 0 10px
+            a
+                color: #fff
+                font-weight: 600
+                font-size: 15px
+                @include transition(all .5s ease-in-out)
+                &.active
+                    color: $main-color
+                &:hover
+                    color: $main-color
+        .dropdown
+            .dropdown-menu
+                    border-radius: 0
+                    padding: 0
+                    .dropdown-item
+                        font-weight: 400
+                        padding: 15px 30px
+                        color: #999
+                        &:hover
+                            background-color: $main-color
+                            color: #fff
+    .another-nav
+        @media(max-width: 991px)
+            flex-direction: row
+        li
+            padding-left: 20px
+            .get
+                @media(max-width: 1199px)
+                    font-size: 14px
+                @media(max-width: 1002px)
+                    font-size: 12px
+                @media(max-width: 600px)
+                    display: none
+
+.hide
+    display: none
+        
+
+.trans-nav
+    @include transition(all .3s ease-in-out)
+    background-color: transparent
+
+
+
+.white-nav
+    @include transition(all .3s ease-in-out)
+    background-color: #fff
+    top: 110px
+    .navbar-nav
+        li
+            a
+                color: #000
+
+.toggler-color
+    background-color: #333
+    ul
+        li
+            a
+                color: #fff !important
+                @include transition(all .5s ease-in-out)
+                &:hover
+                    color: $main-color !important
+            .dropdown-item
+                color: #999 !important
+                &:hover
+                    background-color: $main-color
+                    color: #fff !important
